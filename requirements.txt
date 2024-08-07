@@ -1,0 +1,7 @@
+ev2gym==1.0.0
+wandb
+tqdm
+torch==2.2.2
+icecream
+stable-baselines3[extra]
+sb3-contrib
