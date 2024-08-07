@@ -36,7 +36,7 @@ from TD3.TD3 import TD3
 from SAC.sac import SAC
 from SAC.actionSAC import SAC_ActionGNN
 from SAC.old_actionSAC import SAC_ActionGNN as SAC_ActionGNN_old
-from GNN.state import PublicPST_GNN, V2G_ProfitMax_with_Loads_GNN
+from utils.state import PublicPST_GNN, V2G_ProfitMax_with_Loads_GNN
 
 
 # from DT.evaluation.evaluate_episodes import evaluate_episode_rtg_from_replays

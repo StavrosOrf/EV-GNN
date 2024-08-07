@@ -9,24 +9,25 @@ import random
 import time
 from tqdm import tqdm
 
+import ev2gym
 from ev2gym.rl_agent.reward import ProfitMax_TrPenalty_UserIncentives
 from ev2gym.rl_agent.reward import SimpleReward
 
 from ev2gym.rl_agent.state import V2G_profit_max, PublicPST, V2G_profit_max_loads
-from GNN.state import PublicPST_GNN, V2G_ProfitMax_with_Loads_GNN
+from utils.state import PublicPST_GNN, V2G_ProfitMax_with_Loads_GNN
 
-from GNN.state import PublicPST_GNN_no_position_encoding, PublicPST_GNN_full_graph
+from utils.state import PublicPST_GNN_no_position_encoding, PublicPST_GNN_full_graph
 
 from TD3.TD3_GNN import TD3_GNN
 from TD3.TD3_ActionGNN import TD3_ActionGNN
 from TD3.TD3 import TD3
 
-from TD3.replay_buffer import GNN_ReplayBuffer, ReplayBuffer, ActionGNN_ReplayBuffer
+from utils.replay_buffer import GNN_ReplayBuffer, ReplayBuffer, ActionGNN_ReplayBuffer
 
 from SAC.sac import SAC
 from SAC.actionSAC import SAC_ActionGNN
 
-from GF.action_wrapper import BinaryAction, ThreeStep_Action
+from utils.action_wrapper import BinaryAction, ThreeStep_Action
 
 from gymnasium import Space
 from torch_geometric.data import Data
@@ -354,14 +355,14 @@ if __name__ == "__main__":
             policy = TD3_GNN(**kwargs)
             replay_buffer = GNN_ReplayBuffer(action_dim=action_dim,
                                              max_size=replay_buffer_size,)
-            # save the TD3_GNN.py file using cp
-            os.system(f'cp TD3/TD3_GNN.py {save_path}')
+            # save the TD3_utils.py file using cp
+            os.system(f'cp TD3/TD3_utils.py {save_path}')
 
         elif args.policy == "TD3_ActionGNN":
             policy = TD3_ActionGNN(**kwargs)
             replay_buffer = ActionGNN_ReplayBuffer(action_dim=action_dim,
                                                    max_size=replay_buffer_size,)
-            os.system(f'cp TD3/TD3_ActionGNN.py {save_path}')
+            os.system(f'cp TD3/TD3_Actionutils.py {save_path}')
 
     elif args.policy == "TD3":
         state_dim = env.observation_space.shape[0]
