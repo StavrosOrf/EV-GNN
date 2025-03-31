@@ -40,5 +40,12 @@ showing the best and average rewards achieved by various methods, including GNN-
 # Cite
 
 ```
-TBA
+@article{Orfanoudakis2024,
+  title        = {Scalable Reinforcement Learning for Large-Scale Coordination of Electric Vehicles Using Graph Neural Networks},
+  author       = {Orfanoudakis, Stavros and Robu, Valentin and Salazar Duque, Edgar Mauricio and others},
+  howpublished = {Preprint (Version 1) available at Research Square},
+  year         = {2024},
+  month        = dec,
+  url          = {https://doi.org/10.21203/rs.3.rs-5504138/v1},
+}
 ```
