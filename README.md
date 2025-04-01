@@ -5,8 +5,9 @@ The  **Paper** can be found at: [link](https://arxiv.org/abs/2404.01849).
 The **trained models** and **results** can be found at: [link](https://drive.google.com/drive/folders/1d0QjjmxpnSAtmkjJA4F9CZqrhRfXc_cT?usp=sharing).
 
 
+![image](https://github.com/user-attachments/assets/093e8f50-27f5-4386-88cb-747092e7d7ff)
 
-![image](https://github.com/user-attachments/assets/01fee857-e2f3-4f5c-a5c0-690444242def)
+
 
 **Concept and Architecture of EV-GNN**
   - **EV Charging Problems**: Visualized as a network of charging stations connected to the grid. The problem is formulated as a mathematical optimization with objectives such as minimizing load peaks or maximizing profits, subject to constraints like power limits and EV State of Charge (SoC) requirements.
