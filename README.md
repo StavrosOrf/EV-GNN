@@ -1,6 +1,6 @@
 # EV-GNN: Scalable Reinforcement Learning for Dynamic Electric Vehicle Charging Optimization Using Graph Neural Networks: 
 
-The  **Paper** can be found at: [link](https://www.researchsquare.com/article/rs-5504138/v1).
+The  **Paper** can be found at: [link](https://www.nature.com/articles/s44172-025-00457-8).
 
 The **trained models** and **results** can be found at: [link](https://drive.google.com/drive/folders/1d0QjjmxpnSAtmkjJA4F9CZqrhRfXc_cT?usp=sharing).
 
